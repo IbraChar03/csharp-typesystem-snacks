@@ -18,13 +18,24 @@
 
 //2 snack
 
-Console.Write("Inserisci la prima parola : ");
-string parola1 = Console.ReadLine();
-Console.Write("Inserisci la seconda parola : ");
-string  parola2 = Console.ReadLine();
-if (parola1.Length < parola2.Length)
-    Console.WriteLine($"La parola più corta è : {parola1} quella più lunga è : {parola2}");
-else if(parola2.Length < parola1.Length)
-    Console.WriteLine($"La parola più corta è : {parola2} quella più lunga è : {parola1}");
-else
-    Console.WriteLine($"Le due parole hanno la stessa lunghezza");
+//Console.Write("Inserisci la prima parola : ");
+//string parola1 = Console.ReadLine();
+//Console.Write("Inserisci la seconda parola : ");
+//string  parola2 = Console.ReadLine();
+//if (parola1.Length < parola2.Length)
+//    Console.WriteLine($"La parola più corta è : {parola1} quella più lunga è : {parola2}");
+//else if(parola2.Length < parola1.Length)
+//    Console.WriteLine($"La parola più corta è : {parola2} quella più lunga è : {parola1}");
+//else
+//    Console.WriteLine($"Le due parole hanno la stessa lunghezza");
+
+//3 snack
+int somma = 0;
+for(var i = 0; i < 10; i++)
+{
+    Console.Write($"Inserisci il {i+1} numero  : ");
+    int num = Convert.ToInt32(Console.ReadLine());
+    somma += num;
+    
+}
+Console.Write($"La somma dei numeri è : {somma}");
