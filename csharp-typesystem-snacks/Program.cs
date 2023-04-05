@@ -44,15 +44,15 @@
 
 
 //snack 4
-int[] array = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-int somma = 0;
+//int[] array = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//int somma = 0;
 
-for (var i = 0; i < array.Length; i++)
-{
-    somma += array[i];
-}
-Console.WriteLine($"La somma dei numeri è : {somma}");
-Console.WriteLine($"La media dei numeri è : {somma / array.Length}");
+//for (var i = 0; i < array.Length; i++)
+//{
+//    somma += array[i];
+//}
+//Console.WriteLine($"La somma dei numeri è : {somma}");
+//Console.WriteLine($"La media dei numeri è : {somma / array.Length}");
 
 //snack 5
 
@@ -139,9 +139,22 @@ Console.WriteLine($"La media dei numeri è : {somma / array.Length}");
 //    for (var b = 0; b < array.Length; b++)
 //    { 
 //         array[b] = rnd.Next(1, 101);
-       
+
 //    }
 //    Console.WriteLine("[{0}]", string.Join(", ", array));
 
 //}
-
+// snack 11
+Console.Write("Inserisci due parole : ");
+var words = Console.ReadLine().Split(' '); 
+string word1 = words[0]; 
+string word2 = words[1]; 
+if(word1.Length == word2.Length)
+{
+    Console.WriteLine(word1);
+    Console.WriteLine(word2);
+}
+else if(word1.Length > word2.Length)
+    Console.WriteLine(word1);
+else
+    Console.WriteLine(word2);
