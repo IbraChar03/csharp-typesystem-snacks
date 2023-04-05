@@ -44,14 +44,15 @@
 
 
 //snack 4
+int[] array = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+int somma = 0;
 
-//int somma = 0;
-//for (var i = 2; i < 11; i++)
-//{
-//    somma += i;
-//}
-//Console.WriteLine($"La somma dei numeri è : {somma}");
-//Console.WriteLine($"La media dei numeri è : {somma / 9}");
+for (var i = 0; i < array.Length; i++)
+{
+    somma += array[i];
+}
+Console.WriteLine($"La somma dei numeri è : {somma}");
+Console.WriteLine($"La media dei numeri è : {somma / array.Length}");
 
 //snack 5
 
@@ -129,18 +130,18 @@
 
 //snack 10
 
-Console.Write("Inserisci un numero : ");
-int num =Convert.ToInt32(Console.ReadLine());
-Random rnd = new Random();
-for(var i = 0;i < num; i++)
-{
-    int[] array = new int[10];
-    for (var b = 0; b < array.Length; b++)
-    { 
-         array[b] = rnd.Next(1, 101);
+//Console.Write("Inserisci un numero : ");
+//int num =Convert.ToInt32(Console.ReadLine());
+//Random rnd = new Random();
+//for(var i = 0;i < num; i++)
+//{
+//    int[] array = new int[10];
+//    for (var b = 0; b < array.Length; b++)
+//    { 
+//         array[b] = rnd.Next(1, 101);
        
-    }
-    Console.WriteLine("[{0}]", string.Join(", ", array));
+//    }
+//    Console.WriteLine("[{0}]", string.Join(", ", array));
 
-}
+//}
 
