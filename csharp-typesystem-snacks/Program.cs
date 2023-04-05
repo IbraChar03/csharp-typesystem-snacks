@@ -30,12 +30,22 @@
 //    Console.WriteLine($"Le due parole hanno la stessa lunghezza");
 
 //3 snack
-int somma = 0;
-for(var i = 0; i < 10; i++)
-{
-    Console.Write($"Inserisci il {i+1} numero  : ");
-    int num = Convert.ToInt32(Console.ReadLine());
-    somma += num;
+//int somma = 0;
+//for(var i = 0; i < 10; i++)
+//{
+//    Console.Write($"Inserisci il {i+1} numero  : ");
+//    int num = Convert.ToInt32(Console.ReadLine());
+//    somma += num;
     
+//}
+//Console.Write($"La somma dei numeri è : {somma}");
+
+//4 snack
+int somma = 0;
+for (var i = 2; i < 11; i++)
+{
+    somma += i;
 }
-Console.Write($"La somma dei numeri è : {somma}");
+Console.WriteLine($"La somma dei numeri è : {somma}");
+Console.WriteLine($"La media dei numeri è : {somma/9}");
+
