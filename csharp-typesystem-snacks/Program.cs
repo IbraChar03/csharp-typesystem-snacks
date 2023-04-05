@@ -81,15 +81,26 @@
 
 // snack 7
 
-int[] array = new int[6];
-for(var i = 0; i< 6; i++)
+//int[] array = new int[6];
+//for(var i = 0; i< 6; i++)
+//{
+//    Console.Write($"Inserisci il {i + 1} numero : ");
+//   int num = Convert.ToInt32( Console.ReadLine());
+//    if (num % 2 != 0)
+//        array[i] = num;
+//}
+//for( var i = 0; i< array.Length; i++)
+//{
+//    Console.WriteLine(array[i]);
+//}
+
+//snack 8
+
+int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+int somma = 0;
+for(var i = 0; i< array.Length; i++)
 {
-    Console.Write($"Inserisci il {i + 1} numero : ");
-   int num = Convert.ToInt32( Console.ReadLine());
-    if (num % 2 != 0)
-        array[i] = num;
+    if (i % 2 != 0)
+        somma += array[i];
 }
-for( var i = 0; i< array.Length; i++)
-{
-    Console.WriteLine(array[i]);
-}
+Console.WriteLine($"La somma dei numeri dispari è {somma}");
