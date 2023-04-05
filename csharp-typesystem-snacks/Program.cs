@@ -82,25 +82,65 @@
 // snack 7
 
 //int[] array = new int[6];
-//for(var i = 0; i< 6; i++)
+
+//for (var i = 0; i < 6; i++)
 //{
 //    Console.Write($"Inserisci il {i + 1} numero : ");
-//   int num = Convert.ToInt32( Console.ReadLine());
+//    int num = Convert.ToInt32(Console.ReadLine());
 //    if (num % 2 != 0)
 //        array[i] = num;
 //}
-//for( var i = 0; i< array.Length; i++)
+//for (var i = 0; i < array.Length; i++)
 //{
 //    Console.WriteLine(array[i]);
 //}
 
 //snack 8
 
-int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-int somma = 0;
-for(var i = 0; i< array.Length; i++)
+//int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//int somma = 0;
+//for(var i = 0; i< array.Length; i++)
+//{
+//    if (i % 2 != 0)
+//        somma += array[i];
+//}
+//Console.WriteLine($"La somma dei numeri dispari è {somma}");
+
+//snack 9
+
+
+//int[] array = Array.Empty<int>();
+//do
+//{
+
+//        Console.Write("Inserisci un numero : ");
+//        int num = Convert.ToInt32(Console.ReadLine());
+//        array =  array.Append(num).ToArray();
+
+//}
+//while (array.Sum() < 50);
+
+
+//for(var i = 0; i < array.Length; i++)
+//{
+//    Console.WriteLine(array[i]);
+//}
+
+
+//snack 10
+
+Console.Write("Inserisci un numero : ");
+int num =Convert.ToInt32(Console.ReadLine());
+Random rnd = new Random();
+for(var i = 0;i < num; i++)
 {
-    if (i % 2 != 0)
-        somma += array[i];
+    int[] array = new int[10];
+    for (var b = 0; b < array.Length; b++)
+    { 
+         array[b] = rnd.Next(1, 101);
+       
+    }
+    Console.WriteLine("[{0}]", string.Join(", ", array));
+
 }
-Console.WriteLine($"La somma dei numeri dispari è {somma}");
+
