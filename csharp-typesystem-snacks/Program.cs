@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-//1
+
+//1 snack
+
 Console.Write("Inserisci il primo numero : ");
 int num1 =Convert.ToInt32(Console.ReadLine()) ;
 
@@ -13,3 +14,9 @@ else if (num2 > num1)
     Console.WriteLine("Il secondo numero è magggiore del primo");
 else
     Console.WriteLine("I due numeri sono uguali");
+
+
+//2 snack
+
+
+
