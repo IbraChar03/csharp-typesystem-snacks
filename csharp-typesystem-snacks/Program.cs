@@ -148,16 +148,63 @@
 
 // snack 11
 
-Console.Write("Inserisci due parole : ");
-var words = Console.ReadLine().Split(' '); 
-string word1 = words[0]; 
-string word2 = words[1]; 
-if(word1.Length == word2.Length)
+//Console.Write("Inserisci due parole : ");
+//var words = Console.ReadLine().Split(' '); 
+//string word1 = words[0]; 
+//string word2 = words[1]; 
+//if(word1.Length == word2.Length)
+//{
+//    Console.WriteLine(word1);
+//    Console.WriteLine(word2);
+//}
+//else if(word1.Length > word2.Length)
+//    Console.WriteLine(word1);
+//else
+//    Console.WriteLine(word2);
+
+ using System;
+ class Program
 {
-    Console.WriteLine(word1);
-    Console.WriteLine(word2);
+    // function without any return type declaration  
+    public void words()
+    {
+
+        Console.Write("Inserisci due parole : ");
+        var words = Console.ReadLine().Split(' ');
+        string word1 = words[0];
+        string word2 = words[1];
+        if (word1.Length == word2.Length)
+        {
+            Console.WriteLine(word1);
+            Console.WriteLine(word2);
+        }
+        else if (word1.Length > word2.Length)
+            Console.WriteLine(word1);
+        else
+            Console.WriteLine(word2);
+    }
+
+    public void numbers()
+    {
+
+        Console.Write("Inserisci un numero : ");
+        int num =Convert.ToInt32(Console.ReadLine()) ;
+       
+        if (num % 2 == 0)
+        {
+            Console.WriteLine("Il numero inserito è pari");
+          
+        }
+        
+        else
+            Console.WriteLine("Il numero inserito è dispari");
+    }
+
+    public static void Main(string[] args)
+    {
+        Program pr = new Program();  
+        pr.words();
+        Program pr2 = new Program();
+        pr2.numbers();
+    }
 }
-else if(word1.Length > word2.Length)
-    Console.WriteLine(word1);
-else
-    Console.WriteLine(word2);
