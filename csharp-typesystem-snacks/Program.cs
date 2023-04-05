@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-//1 snack
+//snack 1
 
 //Console.Write("Inserisci il primo numero : ");
 //int num1 =Convert.ToInt32(Console.ReadLine()) ;
@@ -16,7 +16,7 @@
 //    Console.WriteLine("I due numeri sono uguali");
 
 
-//2 snack
+//snack 2
 
 //Console.Write("Inserisci la prima parola : ");
 //string parola1 = Console.ReadLine();
@@ -29,7 +29,9 @@
 //else
 //    Console.WriteLine($"Le due parole hanno la stessa lunghezza");
 
-//3 snack
+
+//snack 3
+
 //int somma = 0;
 //for(var i = 0; i < 10; i++)
 //{
@@ -40,12 +42,22 @@
 //}
 //Console.Write($"La somma dei numeri è : {somma}");
 
-//4 snack
-int somma = 0;
-for (var i = 2; i < 11; i++)
-{
-    somma += i;
-}
-Console.WriteLine($"La somma dei numeri è : {somma}");
-Console.WriteLine($"La media dei numeri è : {somma/9}");
 
+//snack 4
+
+//int somma = 0;
+//for (var i = 2; i < 11; i++)
+//{
+//    somma += i;
+//}
+//Console.WriteLine($"La somma dei numeri è : {somma}");
+//Console.WriteLine($"La media dei numeri è : {somma/9}");
+
+//snack 5
+
+Console.Write("Inserisc un numero : ");
+int numero = Convert.ToInt32(Console.ReadLine());
+if (numero % 2 == 0)
+    Console.WriteLine($"{numero}");
+else
+    Console.WriteLine($"{numero + 1}");
