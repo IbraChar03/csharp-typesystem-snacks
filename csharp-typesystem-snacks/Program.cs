@@ -144,7 +144,10 @@
 //    Console.WriteLine("[{0}]", string.Join(", ", array));
 
 //}
+
+
 // snack 11
+
 Console.Write("Inserisci due parole : ");
 var words = Console.ReadLine().Split(' '); 
 string word1 = words[0]; 
